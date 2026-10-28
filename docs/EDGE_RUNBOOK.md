@@ -134,7 +134,7 @@ Only `/api/tutor`, `/api/ping` and `/api/tts` on the hub; everything else return
 Two ways; the CLI route also works with uncommitted code.
 
 1. **From this folder (CLI):** `npx vercel` to log in and link, then `npx vercel --prod`. Vercel detects Vite (build `npm run build`, output `dist`).
-2. **From GitHub:** import `appbuildersph/modes` into Vercel (needs Vercel access to the organisation) and deploy `main`. Only committed code is deployed.
+2. **From GitHub:** import `appbuildersph/sibol` into Vercel (needs Vercel access to the organisation) and deploy `main`. Only committed code is deployed.
 
 Set the environment variable `VITE_EDGE_BASE=https://<your-name>.ngrok-free.app` **before the build** (Project Settings, Environment Variables; it is baked in at build time, so redeploy after changing it). Then restart the hub with `QUESTION_CORS_ORIGINS=https://<your-vercel-domain>`. The repository's `api/*.js` files also deploy as Vercel functions; without cloud credentials they return placeholders, and the app falls through to the next provider.
 

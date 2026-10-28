@@ -12,7 +12,7 @@ Read this first. It is the entry point for any AI session working in this repo. 
 
 This project is an offline-first Progressive Web App (PWA) that helps Filipino Grade 4-6 learners practise Mathematics (DepEd MATATAG curriculum) with a friendly tutor mascot. Built by the hackathon team. There are no accounts and no client-side API keys; learner data stays on the device (IndexedDB).
 
-This repo (`modes`, origin `github.com/appbuildersph/modes`) contains the application code. The current workstream is the **edge AI tutor** (Gemma 4 E2B on a local laptop, D-018) and the three learning modes (`docs/TUTOR_MODES.md`), plus the submission (`docs/SUBMISSION.md`).
+This repo (`modes`, origin `github.com/appbuildersph/sibol`) contains the application code. The current workstream is the **edge AI tutor** (Gemma 4 E2B on a local laptop, D-018) and the three learning modes (`docs/TUTOR_MODES.md`), plus the submission (`docs/SUBMISSION.md`).
 
 ## The current mission (read before doing anything)
 

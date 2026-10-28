@@ -57,8 +57,8 @@ About 15 minutes, most of it the one-time model download. You need internet only
 **Step 3. Download SIBOL.** Open the Terminal app and run:
 
 ```bash
-git clone https://github.com/appbuildersph/modes.git
-cd modes
+git clone https://github.com/appbuildersph/sibol.git
+cd sibol
 ```
 
 **Step 4. Run the setup.** In the same Terminal window:
@@ -224,7 +224,7 @@ We built a small native macOS app, **SIBOL** (find it with Spotlight: Cmd+Space,
 
 *Captured 2026-10-10 on the edge server with the stack running. The "Tunnel for phones" card pings the hub through the public tunnel every 10 seconds, so ACTIVE means a phone can really reach it.*
 
-- **Download it (easiest):** `sh scripts/setup.sh` installs it for you (see [For judges](#for-judges-set-up-sibol-step-by-step)). By hand: get `SIBOL-macOS.zip` from the [latest release](https://github.com/appbuildersph/modes/releases/latest), unzip it, and drag `SIBOL.app` into Applications. It needs an Apple Silicon Mac, Node.js, LM Studio with Gemma 4 E2B downloaded, and a clone of this repo with `npm install` done (Quick start A, first block). The app finds the clone in your home folder, Desktop, Downloads, Documents or next to the app; otherwise it asks you to pick the folder once.
+- **Download it (easiest):** `sh scripts/setup.sh` installs it for you (see [For judges](#for-judges-set-up-sibol-step-by-step)). By hand: get `SIBOL-macOS.zip` from the [latest release](https://github.com/appbuildersph/sibol/releases/latest), unzip it, and drag `SIBOL.app` into Applications. It needs an Apple Silicon Mac, Node.js, LM Studio with Gemma 4 E2B downloaded, and a clone of this repo with `npm install` done (Quick start A, first block). The app finds the clone in your home folder, Desktop, Downloads, Documents or next to the app; otherwise it asks you to pick the folder once.
 - **First open:** the app is not notarized by Apple, so macOS blocks a double-click the first time. Right-click the app, choose **Open**, then **Open** again. Or run `xattr -dr com.apple.quarantine /Applications/SIBOL.app` once. (Not needed when `setup.sh` installed it.)
 - **Or build it yourself:** `scripts/make-launcher-app.sh` (needs `swiftc` from the Xcode command line tools) creates `SIBOL.app` in `/Applications` with the SIBOL icon.
 - **Phones need the team's tunnel.** The tunnel step uses the team's ngrok domain, so on another Mac it reports the tunnel as not running. Everything else still works, and the app is ready at `http://localhost:8787`.
@@ -295,7 +295,7 @@ More detail: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), decisions in [`docs
 This is the path for judges. It needs Node, LM Studio and the model.
 
 ```bash
-git clone https://github.com/appbuildersph/modes.git && cd modes
+git clone https://github.com/appbuildersph/sibol.git && cd sibol
 npm install
 npm test                 # Node test runner, no network or model needed
 npm run build            # the hub serves the built app from dist/

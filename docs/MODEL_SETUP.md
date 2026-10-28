@@ -26,7 +26,7 @@ Keep the model ID in one config constant so it can be swapped without touching c
 ## 3. First-time setup
 
 ```
-git clone https://github.com/appbuildersph/modes.git
+git clone https://github.com/appbuildersph/sibol.git
 cd modes
 npm install
 npm test            # baseline was 65/65 passing on 2026-10-10

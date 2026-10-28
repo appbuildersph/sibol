@@ -39,7 +39,7 @@ The Mac used Node 24 (`docs/DEV_SETUP.md`); any current LTS should work, but rep
 ## 3. Get the repo running
 
 ```
-git clone https://github.com/appbuildersph/modes.git
+git clone https://github.com/appbuildersph/sibol.git
 cd modes
 git config user.name
 git config user.email
